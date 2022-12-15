@@ -1,0 +1,15 @@
+*.bkp
+*.out
+*.log
+*.toc
+*.lof
+*.lot
+*.bcf
+*.aux
+*.run.*
+*.synctex.*
+.SRCINFO
+*.blg
+*.bbl
+*.fls
+*.fdb_latexmk

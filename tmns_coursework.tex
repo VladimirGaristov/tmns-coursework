@@ -1,0 +1,100 @@
+\documentclass[]{tu_coursework}
+
+\begin{document}
+
+%=====================================================================================================
+%% Метаданни
+\title{Шаблон за курсова работа}
+\doctype{КУРСОВА РАБОТА}
+\author{Димитър Рачков}
+\speciality{Сеирджийство}
+\admgroup{69}
+\faculty{Факултет Електронна Техника и Технологии}
+\fac{ФЕТТ}
+\facnumber{101218420}
+\supervisor{проф. д.т.н. Стилян Гюров}
+% Закоментирай долния ред, ако не се използва
+\supervisorchair{Спиртоварене}
+% Закоментирай долния ред, ако няма рецензент
+\reviewer{проф. д.т.н. Юлиан Вучков}
+% Закоментирай долния ред, ако не се използва
+\reviewerchair{Джумбуш}
+\date{\today}
+\city{София}
+
+\makeatletter
+\hypersetup{						% настройки на пакета hyperref
+	pdftitle={\@title},				% заглавие (PDF meta)
+	%pdfsubject={\thesisSubject},	% тема (PDF meta)
+	pdfauthor={\@author}			% автор (PDF meta)
+}
+\makeatother
+
+\maketitle
+\cleardoublepage
+
+%=====================================================================================================
+%% ЗАДАНИЕ
+\includepdf[pages={1}]{documents/assignment.pdf}
+\cleardoublepage
+
+%=====================================================================================================
+%% ДЕКЛАРАЦИЯ ЗА АКАДЕМИЧНА ЧЕСТНОСТ
+%\includepdf[pages={1}]{documents/declaration.pdf}
+%\cleardoublepage
+
+%=====================================================================================================
+%% БЛАГОДАРНОСТИ
+%\chapter*{Благодарности}
+\begin{center}
+	\pagebreak
+	\hspace{0pt}
+	\vfill
+	\large
+	Благодарности на\\Роси Мандраджийката за дето домъкна уредбата,\\на Ванката и Томи за дето опекоха скарата\\и на Миле Китич.
+	\vfill
+	\hspace{0pt}
+	\pagebreak
+\end{center}
+\cleardoublepage
+
+%=====================================================================================================
+%% АБСТРАКТ
+\begin{abstract}
+	Every abstract follows a similar pattern. Motivate; set aims; describe work; explain results.
+	\vskip 0.5em
+	``XYZ is bad. This project investigated ABC to determine if it was better. 
+	ABC used XXX and YYY to implement ZZZ. This is particularly interesting as XXX and YYY have
+	never been used together. It was found that  
+	ABC was 20\% better than XYZ, though it caused rabies in half of subjects.''
+\end{abstract}
+\cleardoublepage
+
+%=====================================================================================================
+%% СЪДЪРЖАНИЕ
+\tableofcontents
+\listoffigures
+\listoftables
+\vfill
+\pagebreak
+\pagenumbering{arabic}
+
+%=====================================================================================================
+%% ГЛАВИ
+% Добра структура е всяка глава да бъде в отделен .tex файл.
+\input{intro}
+\input{example}
+\input{conclusion}
+
+%=====================================================================================================
+%% ПРИЛОЖЕНИЯ
+\appendix
+\input{appendix}
+
+%=====================================================================================================
+%% БИБЛИОГРАФИЯ
+\nocite{soviet_ics}
+\nocite{rechniko}
+\printbibliography
+
+\end{document}
